@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-迁移学习基准测试（不划分验证集）——按工况“行号段”分别输出（不依赖 named: 列）
-
-保留你之前的全部功能：
-- 训练 50%，验证 0%，测试 50%（按“原始行/组”分组切分，固定随机种子）
+迁移学习基准测试
 - 数据来源：Excel 宽表，时间列形如 "0min","1min",...（可能存在缺失单元格）
 - 加载预训练的 单调( monotone ) PC-NODE 模型 + scaler
 The following transfer-learning strategies were compared:
@@ -16,10 +13,6 @@ The following transfer-learning strategies were compared:
 (g) methodF_feature_affine_input_calibration, where a learnable feature-wise affine transformation was applied to the raw static inputs prior to scaling to achieve input-level calibration; and
 (h) methodG_adapter, where lightweight adapter modules were injected into the last K encoder layers via forward hooks, enabling encoder adaptation while most pretrained parameters were kept fixed.
 
-新增/改动：
-- 不再使用 named: 列
-- 你用“行号段”显式指定三种工况：SiC / CeO2 / TiO2
-- 每个工况单独 split、单独训练评估、单独输出 summary_metrics.xlsx 和各方法 evaluation_details.xlsx
 
 输出目录结构：
 transfer_runs/run_xxx/
