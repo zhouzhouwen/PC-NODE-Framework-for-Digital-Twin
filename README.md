@@ -13,6 +13,12 @@ Accurate prediction of aerosol scavenging under complex spray–mist conditions 
 All code for the training, testing, and deployment of the proposed PC-NODE is publicly available at https://github.com/zhouzhouwen/PC-NODE-Framwork-for-Digital-Twin,
 and the digital-twin demonstration is accessible at https://cell-adjust-locally-manhattan.trycloudflare.com.
 
+<p align="center">
+  <img src="transfer_runs/framework-overview.png" alt="PC-NODE framework overview" width="900">
+</p>
+<p align="center">
+  Overview of the PC-NODE digital twin framework and UTARTS visualization interface.
+</p>
 
 ---
 
