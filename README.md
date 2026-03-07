@@ -20,8 +20,6 @@ and the digital-twin demonstration is accessible at https://cell-adjust-locally-
 
 ---
 
----
-
 ## Tech Stack
 
 This project is implemented in **Python** and currently relies on the scientific Python / deep learning ecosystem inferred from the source code.
@@ -35,7 +33,6 @@ Core libraries include:
 - **joblib** — serialization of scalers
 - **Optuna** — hyperparameter optimization
 - **Matplotlib** — figure generation for paper results
-
 
 ---
 
