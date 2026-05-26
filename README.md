@@ -11,7 +11,6 @@ Physically reliable and rapid prediction of hazardous aerosol removal is essenti
 
 All code for the training, testing, and deployment of the proposed PC-NODE is publicly available at https://github.com/zhouzhouwen/PC-NODE-Framework-for-Digital-Twin,
 and the digital-twin demonstration is accessible at https://abroad-practitioner-promising-slight.trycloudflare.com
-<img width="432" height="560" alt="image" src="https://github.com/user-attachments/assets/1fe70824-5a9b-4e8c-ab23-e78fb5fcca48" />
 
 
 <p align="center">
