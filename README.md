@@ -82,7 +82,7 @@ python scripts/test.py --input data/example_input.csv --output predictions.csv
 
 ## Data Availability
 
-The dataset is not publicly released due to data confidentiality or usage restrictions. It may be made available upon reasonable request, subject to applicable permissions and agreements.
+The dataset is publicly at ./data.
 
 ## Citation
 
