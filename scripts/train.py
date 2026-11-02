@@ -31,8 +31,8 @@ TIME_MIN = [0.0, 1.0, 3.0, 5.0, 10.0, 15.0, 20.0, 30.0, 40.0, 50.0, 60.0]
 TIME_SCALE = 60.0
 N_ZRO2_ROWS = 1365
 TEST_RUNS = [4, 5, 15, 16, 29, 30]
-MODEL = dict(static_embed=128, time_embed=32, d_model=128, n_head=2, n_layers=3, dropout=0.02, coef_floor=1e-6)
-TRAIN = dict(epochs=66, batch_size=16, lr=7.575009105024426e-4, weight_decay=1e-5, clip=1.0, alpha=0.3, y_min=1e-5,
+MODEL = dict(static_embed=128, time_embed=32, d_model=128, n_head=8, n_layers=3, dropout=0.02, coef_floor=1e-6)
+TRAIN = dict(epochs=1760, batch_size=16, lr=7.575009105024426e-4, weight_decay=1e-5, clip=1.0, alpha=0.3, y_min=1e-5,
              r_max=10.0, eps=1e-8, lr_factor=0.5, lr_patience=10, min_lr=1e-6)
 
 
