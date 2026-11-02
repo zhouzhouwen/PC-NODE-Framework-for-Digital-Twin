@@ -1,0 +1,49 @@
+{
+ "model": {
+  "static_embed": 128,
+  "time_embed": 32,
+  "d_model": 128,
+  "n_head": 2,
+  "n_layers": 3,
+  "dropout": 0.02,
+  "coef_floor": 1e-06
+ },
+ "train": {
+  "epochs": 66,
+  "batch_size": 16,
+  "lr": 0.0007575009105024426,
+  "weight_decay": 1e-05,
+  "clip": 1.0,
+  "alpha": 0.3,
+  "y_min": 1e-05,
+  "r_max": 10.0,
+  "eps": 1e-08,
+  "lr_factor": 0.5,
+  "lr_patience": 10,
+  "min_lr": 1e-06,
+  "seed": 0
+ },
+ "n_params": 643012,
+ "time_min": [
+  0.0,
+  1.0,
+  3.0,
+  5.0,
+  10.0,
+  15.0,
+  20.0,
+  30.0,
+  40.0,
+  50.0,
+  60.0
+ ],
+ "time_scale": 60.0,
+ "test_runs": [
+  4,
+  5,
+  15,
+  16,
+  29,
+  30
+ ]
+}
