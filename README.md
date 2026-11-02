@@ -6,6 +6,12 @@ Code and trained model for the paper *A physics-constrained digital twin with ap
 
 Reliable control of radioactive aerosols is essential to the safe decommissioning of nuclear power plants. Insufficient spraying leaves airborne contamination, and excessive spraying generates contaminated water that has to be treated as radioactive waste. This repository provides the predictive core of a digital twin for aerosol scavenging, a Transformer-based physics-constrained neural ordinary differential equation (PC-NODE). The PC-NODE integrates $dy/dt = -g_\theta(s,t) y$ with $y(0) = 1$, where a Transformer computes a positive removal rate $g_\theta$ from the operating variables $s$ and the time $t$. Every predicted trajectory of the normalized aerosol concentration therefore starts at 1, stays within [0, 1] and decreases monotonically. By construction, the removal rate is non-decreasing in the spray flow rate, the mist mean concentration and the mist mean size. The released model was trained on 26 ZrO<sub>2</sub> runs of the University of Tokyo Aerosol Removal Test with Spray (UTARTS) facility and tested on six withheld runs.
 
+## Framework and Digital Twin
+
+![Fig. 4. Workflow of the PC-NODE and UTARTS digital twin](figures/fig4_pcnode_workflow.png)
+
+*Fig. 4. PC-NODE workflow: feature embedding, Transformer fusion, physical constraints and neural ODE integration, together with the UTARTS digital-twin interface and experimental facility.*
+
 ## Highlights
 
 - Hard constraints keep every predicted aerosol decay bounded and monotone
